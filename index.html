@@ -12,18 +12,33 @@
       background-color: #fdfdfd;
       color: #333;
     }
+    
     header {
-      background-image: url("Prescott AZ Cover.png");
-      background-size: cover;
-      background-position: center;
-      height: 50vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 1px 1px 6px black;
-      padding-top: 36em;
-    }
+  background-image: url("Prescott AZ Cover.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 60vh;
+  padding-top: 36em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 6px black;
+}
+    @media (max-width: 600px) {
+  header {
+    height: 40vh;
+    padding-top: 5em;
+    background-position: center;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0 1em;
+  }
+}
     header h1 {
       font-size: 3em;
       margin: 0;
